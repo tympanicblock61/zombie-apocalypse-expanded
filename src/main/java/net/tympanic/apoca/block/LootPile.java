@@ -1,6 +1,7 @@
 package net.tympanic.apoca.block;
 
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;
@@ -31,7 +32,7 @@ import java.util.Iterator;
 import static net.minecraft.item.Items.*;
 
 
-public class LootGen extends Block {
+public class LootPile extends Block {
     public static MinecraftClient client = MinecraftClient.getInstance();
     public static ArrayList<ArrayList<Object>> respawns = new ArrayList<>();
     public static Iterator<ArrayList<Object>> it = respawns.iterator();
@@ -99,7 +100,7 @@ public class LootGen extends Block {
         world.spawnEntity(entity);
     }
 
-    public LootGen(Settings settings) {
+    public LootPile(Settings settings) {
         super(settings);
         setDefaultState(getDefaultState().with(Tier, 0));
         setDefaultState(getDefaultState().with(Respawn, false));

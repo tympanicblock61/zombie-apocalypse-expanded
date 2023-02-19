@@ -1,31 +1,31 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "apoca:block/loot_gen",
-		"1": "apoca:block/loot_gen",
-		"2": "apoca:block/loot_gen",
-		"3": "apoca:block/loot_gen",
-		"4": "apoca:block/loot_gen",
-		"5": "apoca:block/loot_gen",
-		"6": "apoca:block/loot_gen",
-		"7": "apoca:block/loot_gen",
-		"8": "apoca:block/loot_gen",
-		"9": "apoca:block/loot_gen",
-		"10": "apoca:block/loot_gen",
-		"11": "apoca:block/loot_gen",
-		"12": "apoca:block/loot_gen",
-		"13": "apoca:block/loot_gen",
-		"14": "apoca:block/loot_gen",
-		"15": "apoca:block/loot_gen",
-		"16": "apoca:block/loot_gen",
-		"17": "apoca:block/loot_gen",
-		"18": "apoca:block/loot_gen",
-		"19": "apoca:block/loot_gen",
-		"20": "apoca:block/loot_gen",
-		"21": "apoca:block/loot_gen",
-		"22": "apoca:block/loot_gen",
-		"23": "apoca:block/loot_gen",
-		"particle": "apoca:block/loot_gen"
+		"0": "apoca:block/loot_pile",
+		"1": "apoca:block/loot_pile",
+		"2": "apoca:block/loot_pile",
+		"3": "apoca:block/loot_pile",
+		"4": "apoca:block/loot_pile",
+		"5": "apoca:block/loot_pile",
+		"6": "apoca:block/loot_pile",
+		"7": "apoca:block/loot_pile",
+		"8": "apoca:block/loot_pile",
+		"9": "apoca:block/loot_pile",
+		"10": "apoca:block/loot_pile",
+		"11": "apoca:block/loot_pile",
+		"12": "apoca:block/loot_pile",
+		"13": "apoca:block/loot_pile",
+		"14": "apoca:block/loot_pile",
+		"15": "apoca:block/loot_pile",
+		"16": "apoca:block/loot_pile",
+		"17": "apoca:block/loot_pile",
+		"18": "apoca:block/loot_pile",
+		"19": "apoca:block/loot_pile",
+		"20": "apoca:block/loot_pile",
+		"21": "apoca:block/loot_pile",
+		"22": "apoca:block/loot_pile",
+		"23": "apoca:block/loot_pile",
+		"particle": "apoca:block/loot_pile"
 	},
 	"elements": [
 		{
@@ -58,8 +58,8 @@
 			"faces": {
 				"north": {"uv": [0, 0, 3, 1], "texture": "#13"},
 				"east": {"uv": [3, 0, 4, 1], "texture": "#13"},
-				"south": {"uv": [9, 7, 12, 8], "texture": "#13"},
-				"west": {"uv": [8, 2, 9, 3], "texture": "#13"},
+				"south": {"uv": [0, 1, 3, 2], "texture": "#13"},
+				"west": {"uv": [3, 1, 4, 2], "texture": "#13"},
 				"up": {"uv": [3, 3, 0, 2], "texture": "#13"},
 				"down": {"uv": [3, 3, 0, 4], "texture": "#13"}
 			}
@@ -319,8 +319,36 @@
 	],
 	"display": {
 		"thirdperson_righthand": {
-			"rotation": [-8.75, 0, 0],
-			"translation": [0, 7.25, -3.75]
+			"translation": [0, 6.5, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 6.25, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"firstperson_righthand": {
+			"rotation": [28, 0, 0],
+			"translation": [0, 7, 3],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"firstperson_lefthand": {
+			"rotation": [28, 0, 0],
+			"translation": [0, 7, 3],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"ground": {
+			"translation": [0, 4.5, 0],
+			"scale": [0.9, 0.9, 0.9]
+		},
+		"gui": {
+			"rotation": [90, 0, 0]
+		},
+		"head": {
+			"translation": [0, 15.75, 0]
+		},
+		"fixed": {
+			"rotation": [-90, 0, 0],
+			"translation": [0, 0, -8.5]
 		}
 	},
 	"groups": [
