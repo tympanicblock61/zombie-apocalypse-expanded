@@ -19,6 +19,9 @@
   "entrypoints": {
     "main": [
       "net.tympanic.apoca.Main"
+    ],
+    "client": [
+      "net.tympanic.apoca.MainClient"
     ]
   },
   "mixins": [
