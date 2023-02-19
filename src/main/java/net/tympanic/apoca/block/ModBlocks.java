@@ -19,7 +19,7 @@ import net.tympanic.apoca.Main;
 
 
 public class ModBlocks {
-    public static final Block LOOT_GEN = registerBlock("loot_gen", new Block(FabricBlockSettings.of(Material.SOIL).strength(4.0F).requiresTool()), ItemGroups.REDSTONE);
+    public static final Block LOOT_GEN = registerBlock("loot_gen", new Block(FabricBlockSettings.of(Material.SOIL).strength(4.0F).nonOpaque().requiresTool()), ItemGroups.REDSTONE);
 
 
     private static Block registerBlock(String name, Block block, ItemGroup tab) {
