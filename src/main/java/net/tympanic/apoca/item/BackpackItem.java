@@ -24,24 +24,18 @@ public class BackpackItem extends Item {
         this.InvHeight = InvHeight;
         this.InvWidth = InvWidth;
     }
-    @Override
-    public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        Screen test = new Screen(Text.of("test")){
-            @Override
-            public void render(MatrixStack matrices, int mouseX, int mouseY, float delta) {
-                renderBackground(matrices);
-                System.out.printf("height: %s, width: %s", InvHeight, InvWidth);
-            }
-
-        };
-
-        mc.setScreenAndRender(test);
-        return TypedActionResult.pass(user.getStackInHand(hand));
-    }
-
-    public static void test(){
-
-
-
-    }
+    //@Override
+    //public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
+    //    Screen test = new Screen(Text.of("test")){
+    //        @Override
+    //        public void render(MatrixStack matrices, int mouseX, int mouseY, float delta) {
+    //            renderBackground(matrices);
+    //            System.out.printf("height: %s, width: %s", InvHeight, InvWidth);
+    //        }
+    //
+    //    };
+    //
+    //    mc.setScreenAndRender(test);
+    //    return TypedActionResult.pass(user.getStackInHand(hand));
+    //}
 }

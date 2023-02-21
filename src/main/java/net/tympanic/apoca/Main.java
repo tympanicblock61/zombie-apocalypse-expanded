@@ -18,7 +18,6 @@ public class Main implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModItemGroup.registerItemGroups();
 		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
 		LootPile.registerTiers();
