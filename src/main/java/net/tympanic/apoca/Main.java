@@ -3,6 +3,8 @@ package net.tympanic.apoca;
 import net.fabricmc.api.ModInitializer;
 import net.tympanic.apoca.block.LootPile;
 import net.tympanic.apoca.block.ModBlocks;
+import net.tympanic.apoca.item.ModItems;
+import net.tympanic.apoca.item.ModItemGroup;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,7 +18,9 @@ public class Main implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroup.registerItemGroups();
 		ModBlocks.registerModBlocks();
+		ModItems.registerModItems();
 		LootPile.registerTiers();
 	}
 }
